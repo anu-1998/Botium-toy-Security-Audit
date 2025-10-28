@@ -1,0 +1,183 @@
+Botium Toys Security Audit Report
+//////////////////////////
+Scope and Goals of the Audit
+
+Scope:
+The scope of this audit encompasses the entire security program at Botium Toys. This includes all company assets such as employee equipment and devices, internal networks, and systems. The audit reviews existing controls, compliance practices, and the protection of data across all operational environments — on-premises, remote, and online.
+
+Goals:
+The primary goals of this audit are:
+
+To assess existing assets and their management.
+
+To complete the controls and compliance checklist to identify gaps.
+
+To determine which security controls and compliance best practices should be implemented to strengthen Botium Toys’ overall security posture and regulatory compliance.
+
+//////////////////
+Current Assets
+
+Managed by the IT Department:
+
+On-premises equipment for in-office business needs.
+
+Employee equipment (desktops, laptops, smartphones, peripherals, etc.).
+
+Storefront and warehouse products, including eCommerce operations.
+
+Systems, software, and services (accounting, telecom, database, security, eCommerce, and inventory management).
+
+Internet access and internal network infrastructure.
+
+Data retention and storage systems.
+
+Legacy system maintenance (end-of-life systems requiring manual monitoring).
+
+//////////////////
+Risk Assessment
+
+Risk Description:
+Botium Toys currently lacks comprehensive asset management and has not fully implemented the necessary security controls and compliance standards (both U.S. and international).
+
+Control Best Practices:
+Following the Identify function of the NIST Cybersecurity Framework (CSF), Botium Toys must:
+
+Inventory and classify assets.
+
+Determine the business impact of asset loss.
+
+Implement controls to manage, monitor, and protect these assets.
+
+Risk Score:
+8 / 10 (High Risk) — Due to incomplete implementation of key controls, missing compliance measures, and a lack of encryption and backup processes.
+
+/////////////Additional Comments:
+
+All employees have access to internally stored data, including customer PII/SPII and cardholder data.
+
+No encryption is used for credit card or sensitive data.
+
+Least privilege and separation of duties controls are missing.
+
+Firewalls and antivirus solutions are in place and maintained.
+
+No intrusion detection system (IDS) is deployed.
+
+No data backups or disaster recovery plan exist.
+
+Legacy systems are inconsistently maintained.
+
+Physical security (locks, CCTV, fire prevention) is adequate.
+
+Privacy policies and breach notification procedures are documented for GDPR.
+
+Password policy exists but is weak; no centralized password management system is used.
+
+
+///////////////////////////
+CONTROL ASSESSMENT CHECKLIST
+
+| Control                                                             | Yes | No | Explanation                                                                     |
+| ------------------------------------------------------------------- | --- | -- | ------------------------------------------------------------------------------- |
+| Least Privilege                                                     |     | ✅  | Not implemented; all employees have access to sensitive data.                   |
+| Disaster Recovery Plans                                             |     | ✅  | No disaster recovery or backup plans in place.                                  |
+| Password Policies                                                   |     | ✅  | Weak and not compliant with modern standards; lacks complexity and enforcement. |
+| Separation of Duties                                                |     | ✅  | Not implemented; roles and access not clearly segregated.                       |
+| Firewall                                                            | ✅   |    | Configured and active with appropriate rules.                                   |
+| Intrusion Detection System (IDS)                                    |     | ✅  | Not installed.                                                                  |
+| Backups                                                             |     | ✅  | No data backups currently maintained.                                           |
+| Antivirus Software                                                  | ✅   |    | Installed and monitored regularly.                                              |
+| Manual Monitoring, Maintenance, and Intervention for Legacy Systems | ✅   |    | Conducted manually, though not on a fixed schedule.                             |
+| Encryption                                                          |     | ✅  | Not implemented for cardholder or sensitive data.                               |
+| Password Management System                                          |     | ✅  | None in place to enforce or manage password policy.                             |
+| Locks (Offices, Storefront, Warehouse)                              | ✅   |    | Physical locks in place and operational.                                        |
+| Closed-Circuit Television (CCTV) Surveillance                       | ✅   |    | CCTV cameras are up-to-date and monitored.                                      |
+| Fire Detection/Prevention (Fire Alarm, Sprinkler System, etc.)      | ✅   |    | Fire prevention and detection systems are functional.                           |
+
+
+
+
+/////////////////////////
+COMPLIANCE CHECKLIST
+
+| Best Practice                                                                                                | Yes | No | Explanation                                            |
+| ------------------------------------------------------------------------------------------------------------ | --- | -- | ------------------------------------------------------ |
+| Only authorized users have access to customers’ credit card information.                                     |     | ✅  | All employees currently have access to sensitive data. |
+| Credit card information is stored, accepted, processed, and transmitted internally, in a secure environment. |     | ✅  | Environment not secured; lack of encryption.           |
+| Implement data encryption procedures to better secure credit card transaction touchpoints and data.          |     | ✅  | No encryption implemented.                             |
+| Adopt secure password management policies.                                                                   |     | ✅  | Weak password policy without centralized management.   |
+
+
+
+//////////////////////
+
+GDPR REGULATIONS
+| Best Practice                                                                                                     | Yes | No | Explanation                                       |
+| ----------------------------------------------------------------------------------------------------------------- | --- | -- | ------------------------------------------------- |
+| E.U. customers’ data is kept private/secured.                                                                     |     | ✅  | No encryption or access limitation in place.      |
+| There is a plan in place to notify E.U. customers within 72 hours if their data is compromised/there is a breach. | ✅   |    | Notification plan exists.                         |
+| Ensure data is properly classified and inventoried.                                                               |     | ✅  | Data not fully inventoried or classified.         |
+| Enforce privacy policies, procedures, and processes to properly document and maintain data.                       | ✅   |    | Policies exist and are enforced by IT department. |
+
+
+
+\\\\\\\\\\\\\\\\\\\\\
+
+SYSTEM AND ORGANISATION CONTROL (SOC1 AND SOC2)
+| Best Practice                                                                              | Yes | No | Explanation                                                                          |
+| ------------------------------------------------------------------------------------------ | --- | -- | ------------------------------------------------------------------------------------ |
+| User access policies are established.                                                      |     | ✅  | No formal access control policies implemented.                                       |
+| Sensitive data (PII/SPII) is confidential/private.                                         |     | ✅  | Data accessible to all employees.                                                    |
+| Data integrity ensures the data is consistent, complete, accurate, and has been validated. | ✅   |    | IT ensures integrity and system stability.                                           |
+| Data is available to individuals authorized to access it.                                  |     | ✅  | Data is available to all employees; authorization should be restricted to job needs. |
+
+//////////////////////////
+
+Recommendations
+
+.To reduce risks and improve Botium Toys’ security posture, the IT Manager should prioritize the following:
+
+.Implement Access Control Policies:
+
+   .Enforce least privilege and separation of duties to restrict unnecessary data access.
+
+   .Develop and deploy a centralized password management system.
+
+.Data Protection Enhancements:
+
+   .Enable encryption for all sensitive and financial data (at rest and in transit).
+
+   .Implement tokenization or hashing for stored cardholder data.
+
+.Compliance and Regulatory Alignment:
+
+   .Achieve PCI DSS and GDPR compliance through controlled access, encryption, and secure transmission of customer data.
+
+   .Develop clear user access policies aligned with SOC 2 requirements.
+
+.Disaster Recovery and Business Continuity:
+
+   .Create and regularly test backup and disaster recovery plans.
+
+   .Store backups securely off-site or in the cloud.
+
+.Security Monitoring:
+
+   .Deploy an Intrusion Detection System (IDS) and consider an SIEM (Security Information and Event Management) solution for real-time monitoring.
+
+   .Schedule routine vulnerability assessments and penetration tests.
+
+.Password and Authentication Improvements:
+
+   .Strengthen the password policy (e.g., 12+ characters, special symbols, MFA).
+
+   .Roll out multi-factor authentication (MFA) across systems.
+
+.Legacy System Management:
+
+   .Create a maintenance schedule and formal retirement plan for end-of-life systems.
+
+.Continuous Training and Awareness:
+
+    .Conduct employee cybersecurity awareness training to reduce human error risks.
+
