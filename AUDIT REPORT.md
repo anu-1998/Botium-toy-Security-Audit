@@ -1,6 +1,7 @@
-Botium Toys Security Audit Report
-//////////////////////////
-Scope and Goals of the Audit
+# Botium Toys Security Audit Report
+///
+
+## Scope and Goals of the Audit
 
 Scope:
 The scope of this audit encompasses the entire security program at Botium Toys. This includes all company assets such as employee equipment and devices, internal networks, and systems. The audit reviews existing controls, compliance practices, and the protection of data across all operational environments — on-premises, remote, and online.
@@ -8,14 +9,16 @@ The scope of this audit encompasses the entire security program at Botium Toys. 
 Goals:
 The primary goals of this audit are:
 
-To assess existing assets and their management.
+- To assess existing assets and their management.
 
-To complete the controls and compliance checklist to identify gaps.
+- To complete the controls and compliance checklist to identify gaps.
 
-To determine which security controls and compliance best practices should be implemented to strengthen Botium Toys’ overall security posture and regulatory compliance.
+- To determine which security controls and compliance best practices should be implemented to strengthen Botium Toys’ overall security posture and regulatory compliance.
 
-//////////////////
-Current Assets
+///
+
+
+## Current Assets
 
 Managed by the IT Department:
 
@@ -33,13 +36,15 @@ Data retention and storage systems.
 
 Legacy system maintenance (end-of-life systems requiring manual monitoring).
 
-//////////////////
-Risk Assessment
+///
 
-Risk Description:
+
+## Risk Assessment
+
+- Risk Description:
 Botium Toys currently lacks comprehensive asset management and has not fully implemented the necessary security controls and compliance standards (both U.S. and international).
 
-Control Best Practices:
+- Control Best Practices:
 Following the Identify function of the NIST Cybersecurity Framework (CSF), Botium Toys must:
 
 Inventory and classify assets.
@@ -48,10 +53,12 @@ Determine the business impact of asset loss.
 
 Implement controls to manage, monitor, and protect these assets.
 
-Risk Score:
+- Risk Score:
 8 / 10 (High Risk) — Due to incomplete implementation of key controls, missing compliance measures, and a lack of encryption and backup processes.
 
-/////////////Additional Comments:
+///
+
+## Additional Comments:
 
 All employees have access to internally stored data, including customer PII/SPII and cardholder data.
 
@@ -73,9 +80,9 @@ Privacy policies and breach notification procedures are documented for GDPR.
 
 Password policy exists but is weak; no centralized password management system is used.
 
+///
 
-///////////////////////////
-CONTROL ASSESSMENT CHECKLIST
+## CONTROL ASSESSMENT CHECKLIST
 
 | Control                                                             | Yes | No | Explanation                                                                     |
 | ------------------------------------------------------------------- | --- | -- | ------------------------------------------------------------------------------- |
@@ -96,9 +103,9 @@ CONTROL ASSESSMENT CHECKLIST
 
 
 
+///
 
-/////////////////////////
-COMPLIANCE CHECKLIST
+## COMPLIANCE CHECKLIST
 
 | Best Practice                                                                                                | Yes | No | Explanation                                            |
 | ------------------------------------------------------------------------------------------------------------ | --- | -- | ------------------------------------------------------ |
@@ -109,9 +116,10 @@ COMPLIANCE CHECKLIST
 
 
 
-//////////////////////
+///
 
-GDPR REGULATIONS
+## GDPR REGULATIONS
+
 | Best Practice                                                                                                     | Yes | No | Explanation                                       |
 | ----------------------------------------------------------------------------------------------------------------- | --- | -- | ------------------------------------------------- |
 | E.U. customers’ data is kept private/secured.                                                                     |     | ✅  | No encryption or access limitation in place.      |
@@ -121,9 +129,12 @@ GDPR REGULATIONS
 
 
 
-\\\\\\\\\\\\\\\\\\\\\
 
-SYSTEM AND ORGANISATION CONTROL (SOC1 AND SOC2)
+///
+
+
+## SYSTEM AND ORGANISATION CONTROL (SOC1 AND SOC2)
+
 | Best Practice                                                                              | Yes | No | Explanation                                                                          |
 | ------------------------------------------------------------------------------------------ | --- | -- | ------------------------------------------------------------------------------------ |
 | User access policies are established.                                                      |     | ✅  | No formal access control policies implemented.                                       |
@@ -131,9 +142,9 @@ SYSTEM AND ORGANISATION CONTROL (SOC1 AND SOC2)
 | Data integrity ensures the data is consistent, complete, accurate, and has been validated. | ✅   |    | IT ensures integrity and system stability.                                           |
 | Data is available to individuals authorized to access it.                                  |     | ✅  | Data is available to all employees; authorization should be restricted to job needs. |
 
-//////////////////////////
+////
 
-Recommendations
+## Recommendations
 
 .To reduce risks and improve Botium Toys’ security posture, the IT Manager should prioritize the following:
 
